@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: NeueMontreal;
+    src: url(/fonts/PPNeueMontreal-Regular.woff2);
+}
+
+.wrapper{
+    margin: 0 auto;
+    
+    padding-left: 3.2967032967vw;
+    padding-right: 3.2967032967vw;
+
+    .text__wrapper{
+        font-size: 6.5934065934vw;
+        font-weight: 300;
+        line-height: 96%;
+        text-align: center;
+        font-family: NeueMontreal;
+        overflow: hidden;
+
+        .my__text{
+            display: block;
+            overflow: hidden;
+        }
+        
+    }
+
+}
+
