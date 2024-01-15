@@ -7,10 +7,12 @@ const myText = new splitType(".wrapper .my__text", { types: "words" });
 
 const chars = myText.words;
 
-gsap.fromTo(
+const tl = gsap.timeline();
+
+tl.fromTo(
   chars,
   {
-    y: 100,
+    y: 150,
     opacity: 0,
   },
   {
@@ -20,5 +22,7 @@ gsap.fromTo(
     duration: 2,
     ease: "power4.inOut",
   }
-);
+)
+.to(".text__wrapper", {y: "-90px", ease: "power2.out"} , "-=0.35");
+;
 
